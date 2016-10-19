@@ -45,6 +45,4 @@ public class CountDistinctOccurrencesAsASubsequence {
         int count = countDistinctOccurrencesAsASubsequence.findSubsequenceCount("abcecdedcecascedjkle", "ce");
         System.out.println(count);
     }
-
-
 }
