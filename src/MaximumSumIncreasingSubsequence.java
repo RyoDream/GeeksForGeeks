@@ -16,7 +16,6 @@ public class MaximumSumIncreasingSubsequence {
             int[] nums = new int[n];
             for(int i=0;i<n;i++)
                 nums[i] = scanner.nextInt();
-
             System.out.println(maxSumSubsequence(nums));
         }
     }
