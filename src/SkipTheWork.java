@@ -31,6 +31,8 @@ public class SkipTheWork {
         int lastSkip = 0;
         int lastNoSkip = 0;
 
+        // 如果上一轮Skip了，那么这一轮只能在上一轮Skip的基础上加当前元素（不能连续跳两次）
+        // 如果上一轮没有Skip，那么这一轮Skip，取上一轮跳或不跳的最小值加上当前元素
         for(int i=0;i<nums.length;i++) {
             int temp = lastNoSkip;
             lastNoSkip = Math.min(lastNoSkip, lastSkip) + nums[i];
